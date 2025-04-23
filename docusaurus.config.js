@@ -13,7 +13,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://deboraabarca.github.io",
-  baseUrl: "/docusaurus/",
+  baseUrl: "/",
 
   organizationName: "deboraabarca",
   projectName: "docusaurus",
