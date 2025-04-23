@@ -2,22 +2,36 @@
 sidebar_position: 6
 ---
 
-# Congratulations!
+# ¡Felicidades!
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+Has completado el **Capítulo 1** del manual del **Inspector de Elementos**.  
+¡Buen trabajo explorando las herramientas esenciales de DevTools!
 
-Docusaurus has **much more to offer**!
+---
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+## ¿Qué lograste hasta ahora?
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+- Comprendiste la interfaz del Inspector  
+- Aprendiste a manipular el DOM en tiempo real  
+- Dominas la visualización y edición de estilos CSS  
+- Probaste herramientas para diseño responsive
 
-## What's next?
+---
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+### 🚀 Lo que viene:
+
+Prepárate para seguir con:
+
+- **Depuración de JavaScript**
+- **Análisis de rendimiento**
+- **Casos prácticos avanzados**
+
+---
+
+> 🧠 Recuerda: practicar con páginas reales es la mejor manera de dominar estas herramientas.  
+¡Sigue así, estás haciendo un excelente progreso!
+
+---
+
+👉 [Ir al siguiente capítulo](./debugging-javascript.md)
+
