@@ -17,6 +17,7 @@ Cuando un elemento no se ve como debería:
 - Utiliza la herramienta de **Box Model** para entender márgenes, rellenos y dimensiones.
 - Ajusta estilos en tiempo real para probar soluciones sin modificar el código fuente directamente.
 
+<img src="/img/box.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ###  Depurar JavaScript
@@ -27,6 +28,8 @@ Si tu página no responde como esperas:
 - Usa la pestaña **Sources** para establecer **breakpoints** y analizar el flujo del código.
 - Examina el **scope** y el valor de variables en tiempo real.
 - Prueba código directamente en la consola para validar soluciones rápidas.
+
+<img src="/img/error.png" alt="Panel Styles" className="custom-img" />
 
 ---
 
@@ -50,6 +53,7 @@ Asegura una experiencia óptima en todos los dispositivos:
 - Emula condiciones de red lentas para ver cómo se comporta tu página.
 - Ajusta el diseño con media queries y revisa su efecto en tiempo real.
 
+<img src="/img/slow.png" alt="Panel Styles" className="custom-img" />
 ---
 
 >  Estos casos te permitirán aplicar todo lo aprendido en escenarios del mundo real y mejorar tus habilidades como desarrollador web.

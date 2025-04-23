@@ -19,6 +19,7 @@ La pestaña **Console** permite:
 
 Es ideal para probar funciones rápidamente o inspeccionar valores sin modificar el código fuente.
 
+<img src="/img/pestaña.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Breakpoints (puntos de interrupción)
@@ -38,6 +39,8 @@ Tipos de breakpoints disponibles:
 - **DOM breakpoints**: pausa cuando cambia un nodo del DOM.
 - **Event listener breakpoints**: pausa cuando se dispara un evento específico.
 
+<img src="/img/scope.png" alt="Panel Styles" className="custom-img" />
+
 ---
 
 ## Ver variables y scope
@@ -49,6 +52,8 @@ Cuando se detiene la ejecución con un breakpoint:
 - El panel **Call Stack** te muestra la secuencia de llamadas que llevó al punto actual del código.
 
 Esto te ayuda a comprender el estado del programa en cada paso.
+
+<img src="/img/callstack.png" alt="Panel Styles" className="custom-img" />
 
 ---
 
@@ -72,6 +77,7 @@ Cuando se produce un error JavaScript:
 - Puedes hacer clic en el enlace para ir directamente al código en **Sources**.
 - También puedes usar el botón "Pause on exceptions" para detener el código automáticamente al lanzarse un error (incluso si está dentro de un `try...catch`).
 
+<img src="/img/depurar.png" alt="Panel Styles" className="custom-img" />
 ---
 
 > 🛠️ Tip: Usa `debugger;` en tu código para establecer un breakpoint manual. Cuando el navegador lo encuentra, detiene la ejecución automáticamente.

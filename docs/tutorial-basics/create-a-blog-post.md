@@ -17,6 +17,9 @@ Cuando seleccionas un elemento en el panel **Elements**, verás a la derecha el 
 - Estilos tachados (sobrescritos).
 - Estilos heredados desde elementos padre.
 
+<img src="/img/panel-styles.png" alt="Panel Styles" className="custom-img" />
+
+
 ---
 
 ## Modificar estilos en tiempo real
@@ -32,6 +35,8 @@ También puedes:
 - Activar/desactivar reglas con las casillas de verificación.
 - Cambiar nombres de propiedades y ver sugerencias automáticas.
 
+<img src="/img/modify-styles.png" alt="Panel Styles" className="custom-img" />
+
 ---
 
 ## Añadir nuevas reglas CSS
@@ -44,6 +49,7 @@ Para agregar nuevos estilos:
 
 También puedes hacer clic derecho sobre un elemento en el DOM y elegir **"Add style rule"**.
 
+<img src="/img/new-rules.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Box Model y Layout
@@ -56,6 +62,7 @@ El panel **Computed** (o "Calculado") incluye una visualización del **Modelo de
 
 Este modelo te ayuda a entender el espacio que ocupa cada elemento.
 
+<img src="/img/computed.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Entender la cascada y especificidad
@@ -68,6 +75,7 @@ DevTools te permite ver cómo se resuelven los estilos según:
 
 En el panel **Styles**, verás las reglas en orden de prioridad y tachadas si han sido sobrescritas. Esto te ayuda a entender por qué un estilo se aplica (o no).
 
+<img src="/img/especificidad.png" alt="Panel Styles" className="custom-img" />
 ---
 
 > 🎨 Consejo: Puedes experimentar con propiedades como `display`, `flex`, `grid` o `position` y ver de inmediato cómo afecta al diseño del sitio.

@@ -20,6 +20,8 @@ Optimizar el rendimiento de una página web es clave para mejorar la experiencia
 - **SEO**
 - **PWA (Progressive Web App)**
 
+<img src="/img/lithouse.png" alt="Panel Styles" className="custom-img" />
+
 ### Cómo usarla:
 
 1. Abre DevTools y ve a la pestaña **Lighthouse**.
@@ -40,6 +42,7 @@ La pestaña **Performance** te permite grabar y analizar cómo se carga y ejecut
 - Cuellos de botella en el proceso de renderizado.
 - Uso de recursos y llamadas a funciones.
 
+
 ### Cómo usarla:
 
 1. Abre la pestaña **Performance**.
@@ -49,6 +52,7 @@ La pestaña **Performance** te permite grabar y analizar cómo se carga y ejecut
 
 Esta herramienta es ideal para detectar retrasos, animaciones lentas o tareas que bloquean el hilo principal.
 
+<img src="/img/loading.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Memory profiling
@@ -63,6 +67,7 @@ La pestaña **Memory** ayuda a detectar fugas de memoria y optimizar el uso de r
 
 Te permite inspeccionar objetos, ver qué se mantiene en memoria y encontrar referencias no liberadas.
 
+<img src="/img/snapshot.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Rendering performance
@@ -77,6 +82,8 @@ La pestaña **Rendering** (accesible desde el panel lateral de DevTools) permite
 - **Scrolling performance issues**: marca áreas que afectan el rendimiento del scroll.
 
 Estas herramientas ayudan a identificar qué partes de tu UI están causando cuellos de botella gráficos.
+
+<img src="/img/paint-flashing.gif" alt="Panel Styles" className="custom-img" />
 
 ---
 

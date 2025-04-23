@@ -8,6 +8,7 @@ sidebar_position: 6
 ¡Felicitaciones por haber terminado todo el **Manual del Inspector de Elementos**!  
 Has recorrido todas las secciones clave de DevTools y estás listo para llevar tus habilidades de desarrollo frontend al siguiente nivel.
 
+<img src="/img/congrats.gif" alt="Panel Styles" className="custom-img" />
 ---
 
 ##  Lo que dominaste
@@ -34,6 +35,7 @@ Has recorrido todas las secciones clave de DevTools y estás listo para llevar t
 
 >  **Recuerda**: el conocimiento es poder, pero la práctica constante es lo que te convierte en experto.  
 Cada vez que inspecciones un sitio, estás un paso más cerca de dominar el desarrollo web.
+
 
 ---
 

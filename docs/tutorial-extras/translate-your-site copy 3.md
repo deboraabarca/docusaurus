@@ -19,6 +19,7 @@ Los **Snippets** son fragmentos de JavaScript que puedes guardar y ejecutar dire
 
 Son útiles para tareas repetitivas como limpiar la consola, resaltar elementos o probar funciones rápidamente.
 
+<img src="/img/personalizar.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ###  Extensiones útiles
@@ -32,6 +33,7 @@ Existen muchas extensiones para mejorar tu experiencia con DevTools:
 
 Puedes encontrarlas en la [Chrome Web Store](https://chrome.google.com/webstore).
 
+<img src="/img/extenciones.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ###  Atajos de teclado

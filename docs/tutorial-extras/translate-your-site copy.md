@@ -21,6 +21,7 @@ Cada vez que se carga una página, se realizan múltiples solicitudes HTTP (HTML
 
 Puedes hacer clic en cada solicitud para ver sus detalles técnicos.
 
+<img src="/img/xhr.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Analizar tiempos de carga
@@ -35,6 +36,11 @@ DevTools muestra una **línea de tiempo** con el tiempo que toma cada recurso en
 - **Size**: tamaño del archivo transferido.
 
 Esto te ayuda a identificar cuellos de botella y recursos que retrasan la carga.
+
+<video className="custom-img" controls>
+  <source src="/img/waterfall.mp4" type="video/mp4" />
+  Tu navegador no soporta el elemento de video.
+</video>
 
 ---
 
@@ -63,6 +69,7 @@ DevTools permite emular condiciones de red para probar cómo se comporta tu siti
 
 Esto te permite ver qué tan rápido o lento se carga tu página en diferentes condiciones reales de conexión.
 
+<img src="/img/ofline.png" alt="Panel Styles" className="custom-img" />
 ---
 
 > 🔍 Consejo: marca la opción **Preserve log** si quieres mantener el historial de solicitudes al navegar entre páginas.
