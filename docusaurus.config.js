@@ -12,10 +12,10 @@ const config = {
   tagline: "Introducción",
   favicon: "img/favicon.ico",
 
-  url: "https://your-docusaurus-site.example.com",
-  baseUrl: "/",
+  url: "https://deboraabarca.github.io",
+  baseUrl: "/docusaurus/",
 
-  organizationName: "facebook",
+  organizationName: "deboraabarca",
   projectName: "docusaurus",
 
   onBrokenLinks: "throw",
