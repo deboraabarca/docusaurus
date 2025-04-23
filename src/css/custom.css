@@ -1,30 +1,54 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-font-family-base: 'Poppins', sans-serif;
+  
+  /* Colores primarios en tonos morados */
+  --ifm-color-primary: #8a4bff;
+  --ifm-color-primary-dark: #7339e6;
+  --ifm-color-primary-darker: #6328d1;
+  --ifm-color-primary-darkest: #5019b8;
+  --ifm-color-primary-light: #a06fff;
+  --ifm-color-primary-lighter: #b78fff;
+  --ifm-color-primary-lightest: #d4b8ff;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(42, 10, 102, 0.05);
+  
+  /* Fondo con degradado ligero en tonos morados claros */
+  --ifm-background-color: linear-gradient(135deg, #7339e6 0%, #b78fff 50%, #8a4bff 100%);
+  --ifm-background-surface-color: #faf7ff;
+  
+  /* Variables para el degradado del hero */
+  --hero-gradient-start: #f0f0f1;
+  --hero-gradient-end: #9c78e3;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #a06fff;
+  --ifm-color-primary-dark: #8a4bff;
+  --ifm-color-primary-darker: #7339e6;
+  --ifm-color-primary-darkest: #6328d1;
+  --ifm-color-primary-light: #48238d;
+  --ifm-color-primary-lighter: #d4b8ff;
+  --ifm-color-primary-lightest: #efe5ff;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Fondo oscuro con tonos morados profundos */
+  --ifm-background-color: #1a0933;
+  --ifm-background-surface-color: #2d1154;
+  
+  /* Variables para el degradado del hero en modo oscuro */
+  --hero-gradient-start: #2d1154;
+  --hero-gradient-end: #4c1d8f;
+}
+
+/* Estilos específicos para la página de inicio con degradado */
+.homepage-hero {
+  background: linear-gradient(135deg, #7339e6 0%, #b78fff 50%, #8a4bff 100%);
+}
+
+[data-theme='dark'] .homepage-hero {
+  background: linear-gradient(135deg, #2d1154 0%, #4c1d8f 50%, #7339e6 100%);
 }
