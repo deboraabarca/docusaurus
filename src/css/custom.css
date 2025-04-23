@@ -52,3 +52,11 @@
 [data-theme='dark'] .homepage-hero {
   background: linear-gradient(135deg, #2d1154 0%, #4c1d8f 50%, #7339e6 100%);
 }
+.custom-img {
+  max-width: 600px;
+  border: 4px solid #7339e6;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 10);
+}
