@@ -22,7 +22,6 @@ import {
   MessageCircle,
   Rocket,
 } from "lucide-react";
-
 function getIconForItem(item) {
   // Para ayudar con la depuración
   const label = item.label && typeof item.label === "string" ? item.label : "";
@@ -30,10 +29,28 @@ function getIconForItem(item) {
   // Versión mejorada con comprobaciones insensibles a mayúsculas/minúsculas
   const labelLower = label.toLowerCase();
 
-  // Verificar coincidencias exactas primero
-  if (labelLower.includes("tutorial intro")) return <Star size={18} />;
-  if (labelLower.includes("tutorial - basics")) return <Boxes size={18} />;
-  if (labelLower.includes("create a page")) return <FileText size={18} />;
+  // Verificar coincidencias en español
+  if (labelLower.includes("introducción")) return <Star size={18} />;
+  if (labelLower.includes("fundamentos del inspector"))
+    return <Boxes size={18} />;
+  if (labelLower.includes("interfaz del inspector"))
+    return <FileText size={18} />;
+  if (labelLower.includes("manipulación del dom")) return <Code size={18} />;
+  if (labelLower.includes("trabajo con css")) return <PenTool size={18} />;
+  if (labelLower.includes("herramientas para responsive"))
+    return <Smartphone size={18} />;
+  if (labelLower.includes("¡felicidades!")) return <Award size={18} />;
+  if (labelLower.includes("técnicas avanzadas")) return <Code size={18} />;
+  if (labelLower.includes("depuración de javascript"))
+    return <Terminal size={18} />;
+  if (labelLower.includes("análisis de rendimiento"))
+    return <Rocket size={18} />;
+  if (labelLower.includes("análisis de red")) return <Globe size={18} />;
+  if (labelLower.includes("casos prácticos")) return <BookOpen size={18} />;
+  if (labelLower.includes("consejos avanzados"))
+    return <MessageCircle size={18} />;
+  if (labelLower.includes("manual completado")) return <Award size={18} />;
+
   if (labelLower.includes("create a document")) return <Smartphone size={18} />;
   if (labelLower.includes("create a blog post")) return <PenTool size={18} />;
   if (labelLower.includes("markdown features")) return <Code size={18} />;
@@ -41,24 +58,15 @@ function getIconForItem(item) {
   if (labelLower.includes("congratulations")) return <Award size={18} />;
   if (labelLower.includes("tutorial - extras")) return <Package size={18} />;
 
-  // Otras posibles coincidencias
   if (labelLower.includes("blog")) return <DownloadCloud size={18} />;
-  if (labelLower.includes("reseller")) return <Users size={18} />;
-  if (labelLower.includes("guias adicionales")) return <BookOpen size={18} />;
-  if (labelLower.includes("devs")) return <Code size={18} />;
+  if (labelLower.includes("guias")) return <BookOpen size={18} />;
   if (labelLower.includes("esenciales")) return <Star size={18} />;
   if (labelLower.includes("complementarios")) return <Package size={18} />;
-  if (labelLower.includes("rubro")) return <Folder size={18} />;
-  if (labelLower.includes("específicos")) return <PenTool size={18} />;
   if (labelLower.includes("configuración")) return <Settings size={18} />;
   if (labelLower.includes("api")) return <Terminal size={18} />;
-  if (labelLower.includes("custom")) return <PenTool size={18} />;
-  if (labelLower.includes("devops")) return <Terminal size={18} />;
   if (labelLower.includes("manual de usuario")) return <BookOpen size={18} />;
   if (labelLower.includes("plugins")) return <Plug size={18} />;
-  if (labelLower.includes("mozo.pe")) return <Utensils size={18} />;
 
-  // Ícono predeterminado más apropiado para documentación
   return <FileText size={18} />;
 }
 
