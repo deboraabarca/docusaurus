@@ -2,87 +2,82 @@
 sidebar_position: 2
 ---
 
-# Translate your site
+# Análisis de Rendimiento
 
-Let's translate `docs/intro.md` to French.
+Optimizar el rendimiento de una página web es clave para mejorar la experiencia del usuario. DevTools ofrece diversas herramientas que te permiten medir, analizar y solucionar problemas de rendimiento.
 
-## Configure i18n
+---
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+## Auditorías Lighthouse
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
+**Lighthouse** es una herramienta automatizada que analiza la calidad de tu sitio web.
 
-## Translate a doc
+### ¿Qué analiza?
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+- **Rendimiento** (tiempo de carga, interacción, etc.)
+- **Accesibilidad**
+- **Buenas prácticas**
+- **SEO**
+- **PWA (Progressive Web App)**
 
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+### Cómo usarla:
 
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
+1. Abre DevTools y ve a la pestaña **Lighthouse**.
+2. Selecciona las auditorías deseadas.
+3. Haz clic en **Analyze page load**.
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+Te mostrará un informe detallado con puntuaciones y sugerencias de mejora.
 
-## Start your localized site
+---
 
-Start your site on the French locale:
+## Performance timeline
 
-```bash
-npm run start -- --locale fr
-```
+La pestaña **Performance** te permite grabar y analizar cómo se carga y ejecuta tu sitio.
 
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+### Qué puedes ver:
 
-:::caution
+- Eventos como **repaint**, **reflow**, **layout**, y **scripting**.
+- Cuellos de botella en el proceso de renderizado.
+- Uso de recursos y llamadas a funciones.
 
-In development, you can only use one locale at a time.
+### Cómo usarla:
 
-:::
+1. Abre la pestaña **Performance**.
+2. Haz clic en el botón de grabación (círculo rojo).
+3. Interactúa con tu sitio.
+4. Detén la grabación para analizar los resultados.
 
-## Add a Locale Dropdown
+Esta herramienta es ideal para detectar retrasos, animaciones lentas o tareas que bloquean el hilo principal.
 
-To navigate seamlessly across languages, add a locale dropdown.
+---
 
-Modify the `docusaurus.config.js` file:
+## Memory profiling
 
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+La pestaña **Memory** ayuda a detectar fugas de memoria y optimizar el uso de recursos.
 
-The locale dropdown now appears in your navbar:
+### Funciones clave:
 
-![Locale Dropdown](./img/localeDropdown.png)
+- **Heap snapshot**: toma una foto del uso de memoria actual.
+- **Allocation instrumentation**: graba asignaciones de memoria con el tiempo.
+- **Garbage collection**: analiza lo que se elimina y lo que permanece en la memoria.
 
-## Build your localized site
+Te permite inspeccionar objetos, ver qué se mantiene en memoria y encontrar referencias no liberadas.
 
-Build your site for a specific locale:
+---
 
-```bash
-npm run build -- --locale fr
-```
+## Rendering performance
 
-Or build your site to include all the locales at once:
+La pestaña **Rendering** (accesible desde el panel lateral de DevTools) permite activar superposiciones para visualizar problemas de renderizado.
 
-```bash
-npm run build
-```
+### Opciones útiles:
+
+- **Paint flashing**: muestra en color cuando un elemento se vuelve a pintar.
+- **Layer borders**: revela cómo el navegador organiza capas para renderizar.
+- **FPS meter**: muestra la tasa de frames por segundo.
+- **Scrolling performance issues**: marca áreas que afectan el rendimiento del scroll.
+
+Estas herramientas ayudan a identificar qué partes de tu UI están causando cuellos de botella gráficos.
+
+---
+
+> ⚡ Consejo: Usa estas herramientas regularmente para detectar problemas antes de que afecten la experiencia del usuario final.
