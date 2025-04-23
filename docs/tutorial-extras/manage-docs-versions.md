@@ -2,54 +2,76 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Depuración de JavaScript
 
-Docusaurus can manage multiple versions of your docs.
+Chrome DevTools ofrece potentes herramientas para depurar código JavaScript, lo cual es esencial para detectar errores, entender el flujo del programa y mejorar el rendimiento de tu aplicación.
 
-## Create a docs version
+---
 
-Release a version 1.0 of your project:
+## Consola para ejecutar código
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+La pestaña **Console** permite:
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+- Escribir y ejecutar código JavaScript en tiempo real.
+- Ver mensajes de `console.log()`, advertencias y errores.
+- Interactuar directamente con objetos del DOM seleccionados.
+- Acceder a variables desde el contexto actual (`$0` representa el último elemento seleccionado en el DOM).
 
-Your docs now have 2 versions:
+Es ideal para probar funciones rápidamente o inspeccionar valores sin modificar el código fuente.
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+---
 
-## Add a Version Dropdown
+## Breakpoints (puntos de interrupción)
 
-To navigate seamlessly across versions, add a version dropdown.
+Los **breakpoints** te permiten pausar la ejecución del código en una línea específica para inspeccionarlo paso a paso.
 
-Modify the `docusaurus.config.js` file:
+Cómo añadir un breakpoint:
 
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+1. Abre la pestaña **Sources**.
+2. Navega al archivo JavaScript.
+3. Haz clic en el número de línea donde quieres pausar.
 
-The docs version dropdown appears in your navbar:
+Tipos de breakpoints disponibles:
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+- **De línea**: pausa en una línea específica.
+- **Condicionales**: pausa solo si se cumple una condición (`x > 5`).
+- **DOM breakpoints**: pausa cuando cambia un nodo del DOM.
+- **Event listener breakpoints**: pausa cuando se dispara un evento específico.
 
-## Update an existing version
+---
 
-It is possible to edit versioned docs in their respective folder:
+## Ver variables y scope
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+Cuando se detiene la ejecución con un breakpoint:
+
+- Puedes ver las **variables locales**, los **valores actuales** y el **scope** en el panel lateral.
+- También puedes expandir objetos para inspeccionar sus propiedades.
+- El panel **Call Stack** te muestra la secuencia de llamadas que llevó al punto actual del código.
+
+Esto te ayuda a comprender el estado del programa en cada paso.
+
+---
+
+## Monitorizar eventos
+
+Desde la pestaña **Event Listeners** (en el panel derecho de **Elements** o en **Sources**) puedes:
+
+- Ver qué eventos están registrados en un elemento (`click`, `input`, `submit`, etc.).
+- Inspeccionar las funciones asociadas.
+- Agregar breakpoints en listeners de eventos fácilmente.
+
+También puedes pausar la ejecución cuando ocurren ciertos eventos desde el panel **Event Listener Breakpoints** en **Sources**.
+
+---
+
+## Depurar errores
+
+Cuando se produce un error JavaScript:
+
+- DevTools muestra el mensaje de error en la **Consola**, incluyendo el archivo y la línea.
+- Puedes hacer clic en el enlace para ir directamente al código en **Sources**.
+- También puedes usar el botón "Pause on exceptions" para detener el código automáticamente al lanzarse un error (incluso si está dentro de un `try...catch`).
+
+---
+
+> 🛠️ Tip: Usa `debugger;` en tu código para establecer un breakpoint manual. Cuando el navegador lo encuentra, detiene la ejecución automáticamente.
