@@ -16,6 +16,8 @@ En el panel **Elements**, puedes ver la jerarquía completa del DOM.
 - Al pasar el cursor por un elemento, se resaltará su área en la página.
 - Los elementos con subnodos se pueden abrir para ver su contenido interno.
 
+<img src="/img/estructura.png" alt="Panel Styles" className="custom-img" />
+
 ---
 
 ## Seleccionar elementos
@@ -37,6 +39,8 @@ Puedes modificar directamente cualquier parte del HTML desde DevTools:
 - Haz clic derecho sobre un elemento y selecciona **"Edit as HTML"** para editar un bloque completo.
 - Los cambios se reflejan de inmediato en la vista previa del sitio (aunque no se guardan en el archivo original).
 
+<img src="/img/cr.png" alt="Panel Styles" className="custom-img" />
+<img src="/img/chorme.png" alt="Panel Styles" className="custom-img" />
 ---
 
 ## Añadir / eliminar elementos
@@ -63,6 +67,7 @@ Ejemplos:
 - `.btn-primary` para encontrar elementos con esa clase.
 - `[data-id="123"]` para buscar por atributos específicos.
 
+<img src="/img/buscar.png" alt="Panel Styles" className="custom-img" />
 ---
 
 > 🔍 Consejo: El panel **Elements** también muestra eventos vinculados a los nodos, facilitando la depuración de interactividad en la página.
