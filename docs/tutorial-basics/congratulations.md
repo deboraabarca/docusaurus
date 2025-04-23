@@ -7,6 +7,7 @@ sidebar_position: 6
 Has completado el **Capítulo 1** del manual del **Inspector de Elementos**.  
 ¡Buen trabajo explorando las herramientas esenciales de DevTools!
 
+<img src="/img/felicidades.gif" alt="Panel Styles" className="custom-img" />
 ---
 
 ## ¿Qué lograste hasta ahora?
@@ -32,6 +33,4 @@ Prepárate para seguir con:
 ¡Sigue así, estás haciendo un excelente progreso!
 
 ---
-
-👉 [Ir al siguiente capítulo](./debugging-javascript.md)
 
