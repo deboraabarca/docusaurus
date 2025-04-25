@@ -47,7 +47,6 @@ El proyecto fue desplegado utilizando **cPanel**, una herramienta de administrac
     ```bash
    npm run start
 
-     
 ## 🚀 Deploy  
 🔗 [https://941718947.facturalo.co/docusaurus/](https://941718947.facturalo.co/docusaurus/)
 
